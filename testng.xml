@@ -8,6 +8,7 @@
       <class name="scripts.Test3"/>
       <class name="scripts.Test4"/>
       <class name="scripts.Test5"/>
+      <class name="scripts.Test6"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
