@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -125,6 +125,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="scripts.Test5" class="method navigator-link" hash-for-method="tc5">tc5</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="scripts.Test6" class="method navigator-link" hash-for-method="tc6">tc6</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -202,6 +207,21 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">scripts.Test6</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc6">
+                  </a> <!-- tc6 -->
+                  <span class="method-name">tc6</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">scripts.Test2</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -231,6 +251,7 @@
       &lt;class name=&quot;scripts.Test3&quot;/&gt;
       &lt;class name=&quot;scripts.Test4&quot;/&gt;
       &lt;class name=&quot;scripts.Test5&quot;/&gt;
+      &lt;class name=&quot;scripts.Test6&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -244,7 +265,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (5 classes)</span>
+                <span class="test-name">Test (6 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -270,32 +291,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'tc1')
 data.setCell(0, 2, 'scripts.Test1')
-data.setCell(0, 3, 17);
+data.setCell(0, 3, 12);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'tc2')
-data.setCell(1, 2, 'scripts.Test2')
+data.setCell(1, 1, 'tc4')
+data.setCell(1, 2, 'scripts.Test4')
 data.setCell(1, 3, 2);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'tc3')
-data.setCell(2, 2, 'scripts.Test3')
+data.setCell(2, 1, 'tc6')
+data.setCell(2, 2, 'scripts.Test6')
 data.setCell(2, 3, 2);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'tc4')
-data.setCell(3, 2, 'scripts.Test4')
+data.setCell(3, 1, 'tc5')
+data.setCell(3, 2, 'scripts.Test5')
 data.setCell(3, 3, 2);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'tc5')
-data.setCell(4, 2, 'scripts.Test5')
+data.setCell(4, 1, 'tc2')
+data.setCell(4, 2, 'scripts.Test2')
 data.setCell(4, 3, 2);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'tc3')
+data.setCell(5, 2, 'scripts.Test3')
+data.setCell(5, 3, 1);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 25 ms</span>
+              <span class="suite-total-time">Total running time: 21 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -306,18 +331,6 @@ return data;
             <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">tc1</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Hello Java</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">tc2</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Hello Selenium</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
               <span class="reporter-method-name">tc3</span>
               <div class="reporter-method-output-div">
@@ -331,9 +344,27 @@ return data;
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
+              <span class="reporter-method-name">tc6</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Hello Swift</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
               <span class="reporter-method-name">tc5</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Hello Pearl</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">tc1</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Hello Java</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">tc2</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Hello Selenium</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -361,28 +392,35 @@ return data;
               <div class="chronological-class-name">scripts.Test2</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">tc2</span>
-                <span class="method-start">27 ms</span>
+                <span class="method-start">25 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">scripts.Test3</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">tc3</span>
-                <span class="method-start">32 ms</span>
+                <span class="method-start">30 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">scripts.Test4</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">tc4</span>
-                <span class="method-start">37 ms</span>
+                <span class="method-start">34 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">scripts.Test5</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">tc5</span>
-                <span class="method-start">51 ms</span>
+                <span class="method-start">38 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">scripts.Test6</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">tc6</span>
+                <span class="method-start">42 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
